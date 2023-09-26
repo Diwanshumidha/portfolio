@@ -2,7 +2,7 @@ export default function sitemap(){
     const baseurl = 'https://diwanshum.vercel.app/'
     return [
         {
-            url:'/',
+            url:baseurl,
             lastModified:new Date(),
         }
     ]
