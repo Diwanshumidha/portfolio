@@ -20,7 +20,7 @@ export const metadata = {
     title: "Diwanshu Portfolio",
     description:
       "I am a passionate MERN (MongoDB, Express, React, Node.js) developer, and this is where I showcase my journey through the world of web development.",
-    url: "https://diwanshumidha.vercel.app",
+    url: "https://diwanshuportfolio.vercel.app/",
     siteName: "Portfolio",
     images: [
       {

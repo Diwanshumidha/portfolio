@@ -7,7 +7,7 @@ import ActiveSectionContextProvider from "@/contexts/active-section";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://diwanshumidha.vercel.app/'),
+  metadataBase: new URL('https://diwanshuportfolio.vercel.app/'),
   themeColor: 'white',
 };
 
