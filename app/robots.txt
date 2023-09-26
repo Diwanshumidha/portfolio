@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+SiteMap:https://diwanshum.vercel.app/sitemap.xml

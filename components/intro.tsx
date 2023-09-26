@@ -1,7 +1,7 @@
-'use client'
+"use client";
 import Image from "next/image";
 import React from "react";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
@@ -9,23 +9,25 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import useScrollIntersection from "@/lib/useScrollIntersection";
 
-
 const Intro = () => {
-  const {ref} = useScrollIntersection('Home',0.5)
+  const { ref } = useScrollIntersection("Home", 0.5);
 
   return (
-    <section ref={ref} className=" mb-28 text-center max-w-[50rem] sm:mb-0 scroll-mt-28 " id="home">
+    <section
+      ref={ref}
+      className=" mb-28 text-center max-w-[50rem] sm:mb-0 scroll-mt-28 "
+      id="home"
+    >
       <div className=" flex items-center justify-center ">
         <div className=" relative">
           <motion.div
-           initial={{opacity:0,scale:0}}
-           animate={{opacity:1,scale:1}}
-            whileHover={{rotateZ:'30deg'}}
-
-           transition={{
-            type:'tween',
-            duration:0.2
-           }}
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            whileHover={{ rotateZ: "30deg" }}
+            transition={{
+              type: "tween",
+              duration: 0.2,
+            }}
           >
             <Image
               alt="Profile"
@@ -39,32 +41,33 @@ const Intro = () => {
               priority={true}
             />
           </motion.div>
-          <motion.span 
-            initial={{opacity:0,scale:0}}
-            animate={{opacity:1,scale:1}}
+          <motion.span
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{
-              type:'spring',
-              stiffness:125,
-              delay:0.1,
-              duration:0.7
-             }}
-            className=" absolute right-0 bottom-0 text-4xl ">👌</motion.span>
+              type: "spring",
+              stiffness: 125,
+              delay: 0.1,
+              duration: 0.7,
+            }}
+            className=" absolute right-0 bottom-0 text-4xl "
+          >
+            👌
+          </motion.span>
         </div>
       </div>
 
       <motion.h1
         className="mb-10 mt-4 px-4 text-2xl  font-medium !leading-[1.5] sm:text-4xl"
-        initial={{ opacity: 0, scale:1.4 }}
-        animate={{ opacity: 1, scale:1 }}
+        initial={{ opacity: 0, scale: 1.4 }}
+        animate={{ opacity: 1, scale: 1 }}
         transition={{
-          type:'spring',
-          stiffness:70,
-          duration:1
+          type: "spring",
+          stiffness: 70,
+          duration: 1,
         }}
       >
-        
-        <span className="font-bold">
-          Hello, I&apos;m Diwanshu.</span> I&apos;m a{" "}
+        <span className="font-bold">Hello, I&apos;m Diwanshu.</span> I&apos;m a{" "}
         <span className="font-bold">full-stack developer.</span> I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>.
